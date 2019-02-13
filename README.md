@@ -8,6 +8,25 @@ This repository contains build instructions for a simple TYPO3 Docker image.
 
 **Note** that this image is not intended for production usage (yet). It's goal is to provide users an easy quickstart for working with TYPO3.
 
+
+## Compatibility Matrix
+| Typo3 Version | Support | ext Support | PHP V | MYSQL V |
+|---------------|---------|-------------|-------|---------|
+| 9.5.x         | 10-2021 | 10-2024 | 7.2       | 5.5 |
+| 8.7.x         | 03-2020 | 03-2023 | 7.0-7.2   | 5.5 |
+| 7.6.x         | 11-2018 | 11-2021 | 5.5-7.2   | 5.5 |
+| 6.2.x         | 03-2017 | 03-2020 | 5.3.7-5.6 | 5
+| 6.1.x         |         |         | 5.3-5.4   | 5
+| 6.0.x         |         |  	    | 5.3-5.4	| 5
+| 4.7.x         |         | 	    | 5.3       | 5
+| 4.6.x         |         | 	    | 5.3       | 5
+| 4.5.x         |         | 	    | 5.2-5.3	| 5
+| 4.4.x         |         | 	    | 5.2-5.3	| 5
+| 4.3.x         |         | 	    | 5.2-5.3	| 5
+| 4.2.x         |         | 	    | 5.2       | 4
+| 4.1.x         |         | 	    | 4.3-5.2	| 3
+
+
 Usage
 -----
 
@@ -47,3 +66,4 @@ This repository offers the following image tags:
 - `8.7` and `8` for the latest available version from the `8.*` respectively `8.7.*` branch.
 - `7.6` and `7` for the latest available version from the `7.*` respectively `7.6.*` branch.
 - `6.2` and `6` for the latest available version from the `6.*` respectively `6.2.*` branch.
+
