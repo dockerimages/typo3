@@ -1,0 +1,8 @@
+version: "3"
+services:
+  tag2:
+    image: typo3-baseimage:php7.2-apache
+    build: .
+  tag1:
+    image: dockerimages/typo3-baseimage:php7.2-apache
+    build: .
