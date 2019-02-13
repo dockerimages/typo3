@@ -1,4 +1,4 @@
-FROM dockerimages/typo3-baseimage:php-7.2-apache
+FROM dockerimages/typo3-baseimage:php7.2-apache
 LABEL maintainer="Frank Lemanschik <frank@dspeed.eu>"
 
 # Install TYPO3
