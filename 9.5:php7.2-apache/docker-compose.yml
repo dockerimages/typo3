@@ -1,7 +1,7 @@
 version: "3"
 services:
   typo3:
-    image: typo3-php7.2-apache:rc2
+    image: dockerimages/typo3-9.5:php7.2-apache
     build: .
     ports:
       - "80"

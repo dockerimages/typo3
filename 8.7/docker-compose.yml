@@ -1,6 +1,7 @@
 version: "3"
 services:
   typo3:
+    image: typo3-8.7:php7.2-apache
     build: .
     ports:
       - "80:80"

@@ -8,6 +8,11 @@ This repository contains build instructions for a simple TYPO3 Docker image.
 
 **Note** that this image is not intended for production usage (yet). It's goal is to provide users an easy quickstart for working with TYPO3.
 
+## Nameing
+dockerimages/typo3:9.5
+dockerimages/typo3-baseimage:php7.2-apache
+dockerimages/typo3-9.5:php7.2-apache
+
 
 ## Compatibility Matrix
 | Typo3 Version | Support | ext Support | PHP V | MYSQL V |
