@@ -6,9 +6,9 @@ services:
     ports:
       - "80"
     volumes:
-      - fileadmin:/var/www/html/fileadmin
-      - typo3conf:/var/www/html/typo3conf
-      - uploads:/var/www/html/uploads
+      - ./fileadmin:/var/www/html/fileadmin
+      - ./typo3conf:/var/www/html/typo3conf
+      - ./uploads:/var/www/html/uploads
     networks:
       - backend
   database:

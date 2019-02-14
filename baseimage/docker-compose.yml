@@ -1,0 +1,16 @@
+version: "3"
+services:
+  php7.2:
+    image: dockerimages/typo3-baseimage:php7.2-apache
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PHP_VERSION=7.2
+  php5.6:
+    image: dockerimages/typo3-baseimage:php5.6-apache
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PHP_VERSION=5.6
