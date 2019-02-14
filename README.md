@@ -8,12 +8,6 @@ This repository contains build instructions for a simple TYPO3 Docker image.
 
 **Note** that this image is not intended for production usage (yet). It's goal is to provide users an easy quickstart for working with TYPO3.
 
-## Nameing
-dockerimages/typo3:9.5
-dockerimages/typo3-baseimage:php7.2-apache
-dockerimages/typo3-9.5:php7.2-apache
-
-
 ## Compatibility Matrix
 | Typo3 Version | Support | ext Support | PHP V | MYSQL V |
 |---------------|---------|-------------|-------|---------|
@@ -59,6 +53,8 @@ This container does not ship a database management system; which means you'll ha
 
 4. Complete the install tool. When prompted for database credentials, use the environment variables that you've passed to the database container in step 1. If you've linked the containers using the `--link` flag as shown in step 2, use `db` as database host name.
 
+when you used a shared network because of the fact that --link is deprecated then simply choose container or hostname.
+
  ![](doc/database-setup.png)
 
 Available tags
@@ -66,9 +62,11 @@ Available tags
 
 This repository offers the following image tags:
 
+- dockerimages/typo3:9.5-php7.2-apache
+- dockerimages/typo3-baseimage:php7.2-apache
+
 - `latest` maps to the latest available LTS version (currently, latest `9.5.*`)
 - `9.5` and `9` for the latest available version from the `9.*` respectively `9.5.*` branch.
 - `8.7` and `8` for the latest available version from the `8.*` respectively `8.7.*` branch.
 - `7.6` and `7` for the latest available version from the `7.*` respectively `7.6.*` branch.
 - `6.2` and `6` for the latest available version from the `6.*` respectively `6.2.*` branch.
-
