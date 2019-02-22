@@ -8,6 +8,14 @@ This repository contains build instructions for a simple TYPO3 Docker image.
 
 **Note** that this image is not intended for production usage (yet). It's goal is to provide users an easy quickstart for working with TYPO3.
 
+
+## Change install later
+docker run -it --rm -v $PWD:/var/www/html dockerimages/typo3-baseimage:php7.0-apache /bin/bash
+wget -O - https://get.typo3.org/7.6 | tar -xzf -
+
+
+
+
 ## Compatibility Matrix
 | Typo3 Version | Support | ext Support | PHP V | MYSQL V |
 |---------------|---------|-------------|-------|---------|
